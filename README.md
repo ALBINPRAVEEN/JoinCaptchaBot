@@ -1,5 +1,5 @@
 # JoinCaptchaBot
-
+Project cloned from J-Rios
 <p align="center">
     <img width="100%" height="100%" src="https://gist.githubusercontent.com/J-Rios/05d7a8fc04166fa19f31a9608033d10b/raw/32dee32a530c0a0994736fe2d02a1747478bd0e3/captchas.png">
 </p>
