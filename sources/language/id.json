@@ -1,0 +1,229 @@
+{
+    "START":
+        "Halo, Saya adalah Bot yang akan mengirimkan verifikasi captcha untuk setiap pengguna yang bergabung ke grup, dan akan mengeluarkannya bila tidak menyelesaikan captcha dalam waktu yang ditentukan. \n\nIf Pengguna yang mencoba bergabung dengan grup sebanyak 5 kali dan tidak menyelesaikan captcha, saya akan mengasumsikan  \"user\" adalah bot, dan akan dibanned. Juga, setiap pesan yang terdapat URL dikirim oleh \"user\"  sebelum menyelesaikan verifikasi captcha, akan dianggap spam dan akan dihapus.\n\nIngatlah untuk memberikan saya hak istimewa administrator untuk mengkick-banned pengguna dan menghapus pesannya.\n\nCek perintah /help untuk informasi lebih lanjut tentang cara penggunaanku.\n\nAku Berguna? Cek perintah /about dan silahkan berdonasi untukku dan menjaga bot tetap aktif.",
+
+    "HELP":
+        "Bantuan Bot:\n————————————————\n- Aku adalah bot yang akan mengirimkan verifikasi captcha untuk setiap pengguna yang bergabung ke grup, dan akan mengeluarkannya bila tidak menyelesaikan captcha dalam waktu yang ditentukan.\n\n- If Pengguna yang mencoba bergabung dengan grup sebanyak 5 kali dan tidak menyelesaikan captcha, saya akan mengasumsikan  \"user\" adalah bot, dan akan dibanned.\n\n- setiap pesan yang terdapat URL dikirim oleh \"user\"  sebelum menyelesaikan verifikasi captcha, akan dianggap spam dan akan dihapus.\n\n- berikan saya hak istimewa administrator untuk mengkick-banned pengguna dan menghapus pesannya.\n\n- Untuk meciptakan grup yang bersih, saya akan otomatis menghapus semua pesan yang dikirimkan kepadaku ketika pengguna tidak menyelesaikan captcha dan pengguna telah dikeluarkan (setelah 5 menit).\n\n- Tenggat waktu yang diberikan kepada pengguna baru untuk menyelesaikan captcha adalah 5 menit, dan bisa dikonfigurasikan ulang menggunakan perintah /time.\n\n- Kamu bisa mematikan/menyalakan perlindungan captcha dengan menggunakan perintah /enable dan /disable.\n\n- Perintah konfigurasi hanya bisa digunakan oleh Administrator grup.\n\n- Kamu bisa mengganti bahasa yang aku gunakan, dengan menggunakan perintah /language.\n\n- Kamu bisa mengatur tingkat kesulitan captcha dengan menggunakan perintah /difficulty.\n\n- Kamu bisa mengatur captcha agar hanya menggunakan angka (bawaannya) atau kombinasi angka dan huruf, or a math equation to be solved, or a custom poll, or just a button, dengan menggunakan perintah /captcha_mode.\n\n- Kamu bisa mengatur pesan selamat datang khusus dengan perintah /welcome_msg.\n\n- You can enable an option to let me apply restriction to new joined users to send non-text messages using command /restrict_non_text.\n\n- If the Bot is Private, allow groups with command /allowgroup.\n\n- Cek /commands untuk mendapatkan daftar semua perintah yang tersedia, dan penjelasan singkatnya.",
+
+    "COMMANDS":
+        "Daftar Perintah:\n————————————————\n/start - Menampilkan informasi awal tentang bot.\n\n/help - Menampilkan informasi yang berguna.\n\n/commands - Menampilkan pesan ini. Informasi tentang semua perintah yang tersedia dan penjelasannya.\n\n/language - Mengganti bahasa dalam pesan bot.\n\n/time - Mengganti waktu yang tersedia untuk menyelesaikan captcha.\n\n/difficulty - Mengganti tingkat kesulitan captcha (dari 1 sampai 5).\n\n/captcha_mode - Mengganti mode karakter captcha (nums: hanya angka, hex: angka dan huruf A-F, ascii: Angka dan huruf A-Z, math: math equation, poll: custom and configurable poll, button: just a button).\n\n/captcha_poll - Configure custom poll question and options for captcha in poll mode.\n\n/welcome_msg - Mengatur pesan selamat datang yang dikirimkan setelah pengguna menyelesaikan captcha.\n\n/restrict_non_text - Setelah pengguna baru memecahkan captha, terapkan batasan untuk tidak mengizinkan mereka mengirim pesan non-teks (gambar, video, audio) selama 1 hari (atau selamanya, menggunakan kata kunci \"forever\").\n\n/add_ignore - Jangan meminta captcha kepada pengguna yang diabaikan.\n\n/remove_ignore - Berhenti mengabaikan pengguna.\n\n/ignore_list - daftar ID pengguna yang diabaikan.\n\n/remove_solve_kick_msg - Configure if captcha solve and kick/ban messages should be automatically deleted after a while.\n\n/remove_welcome_msg - Configure if welcome message should be automatically deleted after a while.\n\n/allowgroup - Izinkan grup untuk menggunakan Bot (jika Bot bersifat Pribadi).\n\n/enable - Mengaktifkan proteksi captcha dalam grup.\n\n/disable - Menonaktifkan proteksi captcha dalam grup.\n\n/chatid - Shows Chat ID of current chat.\n\n/version - Menampilkan versi Bot.\n\n/about - Menampilkan info tentang saya.",
+
+    "CMD_NOT_ALLOW":
+        "Hanya admin yang dapat menggunakan perintah ini!.",
+
+    "LANG_CHANGE":
+        "Bahasa diubah ke Bahasa Indonesia.",
+
+    "LANG_SAME":
+        "Aku sudah berbahasa Indonesia!.\n\nBahasa yang didukung:\n{}",
+
+    "LANG_BAD_LANG":
+        "Bahasa tidak tersedia.\n\nBahasa yang didukung:\n{}",
+
+    "LANG_NOT_ARG":
+        "Perintah ini memerlukan penyetingan bahasa.\n\nContoh:\n{}",
+
+    "TIME_CHANGE":
+        "Waktu untuk menyelesaikan captcha berhasil diubah menjadi {} menit.",
+
+    "TIME_MAX_NOT_ALLOW":
+        "Waktu penyelesaian captcha maksimum yang diizinkan adalah 20 menit. Waktu belum diubah.",
+
+    "TIME_NOT_NUM":
+        "Waktu yang diberikan bukanlah bukanlah angka.",
+
+    "TIME_NOT_ARG":
+        "Perintah memerlukan jumlah waktu untuk diatur (dalam menit).\n\nContoh:\n/time 3\n/time 5\n/time 10",
+
+    "DIFFICULTY_CHANGE":
+        "Tingkat kesulitan captcha berhasil diubah ke level {}.",
+
+    "DIFFICULTY_NOT_NUM":
+        "Tingkat kesulitan captcha yang didukung bukanlah angka.",
+
+    "DIFFICULTY_NOT_ARG":
+        "Perintah memerlukan tingkat kesulitan untuk diatur (dari 1 ke 5).\n\nContoh:\n/difficulty 1\n/difficulty 2\n/difficulty 3\n/difficulty 4\n/difficulty 5",
+
+    "CAPTCHA_MODE_CHANGE":
+        "Mode karakter captcha berhasil diubah ke \"{}\".",
+
+    "CAPTCHA_MODE_INVALID":
+        "Mode karakter captcha tidak valid. mode yang didukung: \"nums\", \"hex\", \"ascii\", \"math\", \"button\" dan \"poll\".\n\nContoh:\n/captcha_mode nums\n/captcha_mode hex\n/captcha_mode ascii\n/captcha_mode math\n/captcha_mode button\n/captcha_mode poll",
+
+    "CAPTCHA_MODE_NOT_ARG":
+        "Perintah memerlukan mode karakter untuk diatur. Mode yang tersedia:\n- Captcha Angka (\"nums\").\n- Captcha HexaDesimal, angka dan huruf A-F (\"hex\").\n- Angka dan Captcha huruf A-Z (\"ascii\").\n- Math equation to be solved Captchas (\"math\").\n- Button-only challenge (\"button\").\n- Custom Poll challenge (\"poll\").\n\nContoh:\n/captcha_mode nums\n/captcha_mode hex\n/captcha_mode ascii\n/captcha_mode math\n/captcha_mode button\n/captcha_mode poll",
+
+    "WELCOME_MSG_SET":
+        "Pesan selamat datang berhasil diatur.",
+
+    "WELCOME_MSG_UNSET":
+        "Pesan selamat datang dinonaktifkan.",
+
+    "WELCOME_MSG_SET_NOT_ARG":
+        "Taruh pesan selamat datangnya setelah perintah.\n\nContoh:\n/welcome_msg Hai $user, selamat datang di grup dan ingatlah untuk menghormati pengguna lain.\n\nMenonatifkan pesan selamat datang:\n/welcome_msg disable",
+
+    "RESTRICT_NON_TEXT_MSG_ENABLED":
+        "Pembatasan untuk mengirim pesan non-teks untuk pengguna baru diaktifkan. Saya akan menghapus izin pengguna baru yang bergabung kecuali pengiriman pesan teks.",
+
+    "RESTRICT_NON_TEXT_MSG_DISABLED":
+        "Pembatasan untuk mengirim pesan non-teks untuk pengguna baru dinonaktifkan.",
+
+    "RESTRICT_NON_TEXT_MSG_NOT_ARG":
+        "Pembatasan untuk mengirim pesan non-teks untuk pengguna baru diaktifkan. Saya akan menghapus izin pengguna baru yang bergabung kecuali pengiriman pesan teks (Jangan izinkan pengguna mengirim media atau pesan lain selain pesan teks. Admin dapat secara manual memberikan izin itu lagi kepada pengguna di masa mendatang).\n\nContoh:\n/restrict_non_text enable\n/restrict_non_text enable forever\n/restrict_non_text disable",
+
+    "IGNORE_LIST_ADD_NOT_ARG":
+        "Tolong, tempatkan ID/alias pengguna setelah perintah.\n\nContoh:\n/add_ignore 1234567890\n/add_ignore @peter",
+
+    "IGNORE_LIST_ADD_DUPLICATED":
+        "ID/alias ini sudah ada dalam daftar abaikan.",
+
+    "IGNORE_LIST_ADD_LIMIT_EXCEEDED":
+        "Sayangnya, Anda telah mencapai batas maksimum pengguna yang ditambahkan dalam daftar abaikan, hapus seseorang untuk menambahkan lebih banyak.",
+
+    "IGNORE_LIST_ADD_INVALID":
+        "ID/alias ini tidak valid.",
+
+    "IGNORE_LIST_ADD_SUCCESS":
+        "ID/alias berhasil ditambahkan!",
+
+    "IGNORE_LIST_REMOVE_NOT_ARG":
+        "Tolong, tempatkan ID/alias pengguna setelah perintah.\n\nContoh:\n/remove_ignore 1234567890\n/remove_ignore @peter",
+
+    "IGNORE_LIST_REMOVE_SUCCESS":
+        "ID/alias berhasil dihapus!",
+
+    "IGNORE_LIST_REMOVE_NOT_IN_LIST":
+        "ID/alias ini tidak ada dalam daftar abaikan, tidak ada yang dilakukan.",
+
+    "IGNORE_LIST_EMPTY":
+        "Abaikan daftar obrolan kosong.",
+
+    "NEW_USER_IMG_CAPTION":
+        "Halo {}, selamat datang di {}, harap kirimkan pesan dengan angka yang terdapat dalam captcha untuk memastikan kamu benar - benar orang. Jika kamu tidak menyelesaikan verifikasi captcha dalam {} menit, kamu akan otomatis dikeluarkan dari grup. Bila dalam verifikasi terdapat huruf, besar dan kecilnya huruf wajib diperhatikan.",
+
+    "NEW_USER_MATH_CAPTION":
+        "Hello {}, welcome to {}. Please write a message with the result of this math equation to verify that you are a human. If you don't solve this captcha in {} mins, you will be automatically kicked out of the group.",
+
+    "NEW_USER_BUTTON_MODE":
+        "Halo {}, selamat datang di {}. Harap tekan tombol di bawah untuk memverifikasi bahwa Anda adalah manusia. Jika anda tidak melakukan ini dalam {} menit, anda akan dikeluarkan dari grup secara otomatis.",
+
+    "CAPTCHA_SOLVED":
+        "Captcha selesai, Pengguna telah diverifikasi.\nSelamat datang di grup {}",
+
+    "CAPTCHA_INCORRECT_0":
+        "Nomor yang kamu masukan salah. Coba kembali...",
+
+    "CAPTCHA_INCORRECT_1":
+        "Itu bukan nomor yang benar. Cek lebih teliti, captcha memiliki 4 angka...",
+
+    "CAPTCHA_INCORRECT_MATH":
+        "That is not the correct number. Check closely, you need to solve the math equation...",
+
+    "NEW_USER_KICK":
+        "{} tidak menyelesaikan captcha dalam waktu yang ditentukan. \"User\" Telah dikeluarkan.",
+
+    "NEW_USER_KICK_NOT_RIGHTS":
+        "Saya mencoba mengeluarkan \"User\" {}, tetapi aku tidak memiliki hak istimewa administrator untuk mengeluarkan pengguna dari grup.",
+
+    "NEW_USER_KICK_NOT_IN_CHAT":
+        "Saya mencoba mengeluarkan \"User\" {}, tapi pengguna ini tidak berada dalam grup (telah meninggalkan grup atau telah dikeluarkan oleh admin).",
+
+    "BOT_CANT_KICK":
+        "Saya mencoba mengeluarkan \"User\" {}, tapi gagal diakibatkan oleh masalah yang tidak diketahui (mungkin server down atau mengalami gangguan).",
+
+    "CANT_DEL_MSG":
+        "Saya mencoba menghapus pesan ini, tetapi saya tidak memiliki hak istimewa administrator untuk menghapus pesan yang belum dikirimkan oleh saya.",
+
+    "NEW_USER_BAN":
+        "Peringatan: Ini adalah kelima kalinya {} mencoba bergabung ke grup dan gagal menyelesaikan captcha. \"User\" telah diblokir. Untuk membiarkan pengguna ini bergabung kembali, Admin harus secara manual menghapus pemblokiran \"user\" ini.",
+
+    "NEW_USER_BAN_NOT_IN_CHAT":
+        "Peringatan: Ini adalah kelima kalinya {} mencoba bergabung ke grup dan gagal menyelesaikan captcha. Saya mencoba memblokir \"User\", tetapi pengguna ini tidak berada dalam grup (telah meninggalkan grup atu dikeluarkan/diblokir oleh admin).",
+
+    "NEW_USER_BAN_NOT_RIGHTS":
+        "Peringatan: Ini adalah kelima kalinya {} mencoba bergabung ke grup dan gagal menyelesaikan captcha. Saya mencoba memblokir \"User\", tetapi saya tidak memiliki hak istimewa administrator untuk memblokir pengguna ini.",
+
+    "BOT_CANT_BAN":
+        "Peringatan: Ini adalah kelima kalinya {} mencoba bergabung ke grup dan gagal menyelesaikan captcha. Saya mencoba memblokir \"User\", tetapi gagal diakibatkan oleh masalah yang tidak diketahui (mungkin server down atau mengalami gangguan).",
+
+    "SPAM_DETECTED_RM":
+        "Mendeteksi pesan dengan URL (atau alias) dari {}, yang belum menyelesaikan captcha. Pesan telah dihapus untuk menjaga telegram tetap bebas dari spam:)",
+
+    "SPAM_DETECTED_NOT_RM":
+        "Pesan dengan URL (atau alias) terdeteksi dari {}, yang belum menyelesaikan captcha. Saya mencoba untuk menghapus pesan spam, tapi saya tidak memiliki hak istimewa administrator untuk menghapus pesan yang belum dikirimkan oleh saya.",
+
+    "NOT_TEXT_MSG_ALLOWED":
+        "Menghapus pesan media (gambar, audio, file...) dari {}, untuk menjaga telegram tetap bebas dari spam.\n\nKamu bjsa mengirimkan pesan media setelah kamu menyelesaikan captcha.",
+
+    "RM_SOLVE_KICK_MSG":
+        "Configure if solve and kick/ban messages should be automatically removed after a while.\n\nExamples:\n/remove_solve_kick_msg yes\n/remove_solve_kick_msg no",
+
+    "RM_SOLVE_KICK_MSG_YES":
+        "Configuration change, solve and kick/ban messages will be automatically removed after a while.",
+
+    "RM_SOLVE_KICK_MSG_NO":
+        "Configuration change, solve and kick/ban messages won't be removed.",
+
+    "RM_WELCOME_MSG":
+        "Configure if welcome messages should be automatically removed after a while.\n\nExamples:\n/remove_welcome_msg yes\n/remove_welcome_msg no",
+
+    "RM_WELCOME_MSG_YES":
+        "Configuration change, welcome messages will be automatically removed after a while.",
+
+    "RM_WELCOME_MSG_NO":
+        "Configuration change, welcome messages won't be removed.",
+
+    "OTHER_CAPTCHA_BTN_TEXT":
+        "Captcha lainnya",
+
+    "PASS_BTN_TEXT":
+        "Saya bukan Bot",
+
+    "ENABLE":
+        "Proteksi Captcha diaktifkan. Nonaktifkan captcha dengan perintah /disable ",
+
+    "DISABLE":
+        "Proteksi Captcha dinonaktifkan. Aktifkan captcha dengan perintah /enable ",
+
+    "ALREADY_ENABLE":
+        "Proteksi captcha sudah diaktifkan sebelumnya.",
+
+    "ALREADY_DISABLE":
+        "Proteksi captcha sudah dinonaktifkan sebelumnya",
+
+    "CAN_NOT_GET_ADMINS":
+        "Tidak dapat menggunakan perintah ini dalam grup saat ini.",
+
+    "VERSION":
+        "Versi Bot saat ini:\n{}",
+
+    "ABOUT_MSG":
+        "Bot ini adalah perangkat lunak gratis dan open-sourced (sumber terbuka) dalam lisensi GNU-GPL. \nBot dikembangkan oleh {}.\n\nKamu bisa mengecek kodenya disini:\n{}\n\nKamu menyukai hasil kerjaku? Belikan saya kopi:\n{}\n\nBTC:\n{}",
+
+    "POLL_NEW_USER":
+        "Hello {}, welcome to {}. Please solve the poll below to prove that you are not a robot. If you don't do this in {} mins, you will be automatically kicked out of the group.",
+
+    "CAPTCHA_POLL_FAIL_0":
+        "Captcha poll fail, {} select a wrong answer. You will be kicked in 10s, please try to join the group again...",
+
+    "CAPTCHA_POLL_FAIL_1":
+        "Captcha poll fail, {} select a wrong answer. \"User\" was kicked out.",
+
+    "CAPTCHA_POLL_USAGE":
+        "Configure Captcha Poll Question and options\n————————————————\nQuestion text can't be larger than {} characters.\n\nOption text can't be larger than {} characters.\n\nMaximum number of options are {}.\n————————————————\nSet Poll Question:\n/captcha_poll question Are you sure that you want to enter to this group?\n\nSet Poll Option 1:\n/captcha_poll option 1 Nope, I don't want to enter the group.\n\nSet Poll Option 2:\n/captcha_poll option 2 Sure, I'm a human and want to enter the group.\n\nSet Poll Option 3:\n/captcha_poll option 3 Who I am and what am I doing?\n\nRemove Poll Option 2:\n/captcha_poll option 2 remove\n\nSet Correct Poll Option 2:\n/captcha_poll correct_option 2\n\nChange Captcha to Poll Mode:\n/captcha_mode poll",
+
+    "POLL_QUESTION_CONFIGURED":
+        "Captcha Poll Question successfully configured.",
+
+    "POLL_OPTION_CONFIGURED":
+        "Captcha Poll Option {} successfully configured.",
+
+    "POLL_CORRECT_OPTION_CONFIGURED":
+        "Captcha Poll Correct Option successfully configured to option number {}.",
+
+    "POLL_CORRECT_OPTION_NOT_CONFIGURED":
+        "Poll option number {} doesn't exists, please configure the option first.\n\nExample:\ncaptcha_poll question Is 1+2 equal to 5?\n\n/captcha_poll option 1 Yes\n\n/captcha_poll option 2 No\n\n/captcha_poll correct_option 2\n\n/captcha_mode poll",
+
+    "POLL_NEW_USER_NOT_CONFIG":
+        "A new user has come, but Captcha Poll is not totally configured.\n\nPoll question, Poll correct answer and minimum 2 answer options needs to be configured. Please, configure it with /captcha_poll command.\n\nExample:\ncaptcha_poll question Is 1+2 equal to 5?\n\n/captcha_poll option 1 Yes\n\n/captcha_poll option 2 No\n\n/captcha_poll correct_option 2\n\n/captcha_mode poll"
+}
