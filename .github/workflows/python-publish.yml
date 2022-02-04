@@ -27,5 +27,5 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: bot run
       run: |
-        cd JoinCaptchaBot/sources && chmod +x run status kill && bash ./run
+        cd sources && chmod +x run status kill && bash ./run
 
